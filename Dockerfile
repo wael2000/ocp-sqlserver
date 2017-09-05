@@ -1,3 +1,5 @@
+FROM microsoft/mssql-server-linux:latest
+
 # Install node/npm
 RUN apt-get -y update  && \
         apt-get install -y curl && \
