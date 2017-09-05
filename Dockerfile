@@ -1,14 +1,5 @@
 FROM microsoft/mssql-server-linux:latest
 
-# Install node/npm
-RUN apt-get -y update  && \
-        apt-get install -y curl && \
-        curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
-        apt-get install -y nodejs
-
-# Install tedious, the driver for SQL Server for Node.js
-RUN npm install tedious
-
 # Create app directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
