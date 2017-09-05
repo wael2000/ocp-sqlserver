@@ -2,7 +2,7 @@ FROM microsoft/mssql-server-linux:latest
 
 # Install node/npm
 RUN apt-get -y update  && \
-        apt-get install -y curl | bash - 
+        apt-get install -y curl
 
 
 # Create app directory
