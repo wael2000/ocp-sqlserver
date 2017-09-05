@@ -21,4 +21,4 @@ RUN chmod +x /usr/src/app/import-data.sh
 
 #EXPOSE 8080
 
-#CMD /bin/bash ./entrypoint.sh
+CMD /bin/bash ./entrypoint.sh
